@@ -74,7 +74,7 @@ export default function SendProjectButton({
       };
 
       const res = await fetch(
-        "https://engexpstaging.wpengine.com/wp-json/calc/v1/save-canopy-solution-suspended-sent-project",
+        "https://engexpstaging.wpengine.com/wp-json/calc/v1/save-ems-suspended-sent-project",
         {
           method: "POST",
           headers: {

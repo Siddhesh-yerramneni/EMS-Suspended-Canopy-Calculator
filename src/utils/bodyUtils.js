@@ -4,7 +4,7 @@ export const handleFeedback = async (message, wp_email) => {
   // if (!wp_email) console.warn("No wp_email for feedback");
 
   await fetch(
-    "/api/wp-json/calc/v1/canopy_solution_suspended_feedback",
+    "/api/wp-json/calc/v1/ems_suspended_calculator_feedback",
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },

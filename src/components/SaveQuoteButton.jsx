@@ -74,7 +74,7 @@ export default function SaveQuoteButton({
       };
 
       const res = await fetch(
-        "https://engexpstaging.wpengine.com/wp-json/calc/v1/save-suspended-quote",
+        "https://engexpstaging.wpengine.com/wp-json/calc/v1/save-ems-suspended-project",
         {
           method: "POST",
           headers: {

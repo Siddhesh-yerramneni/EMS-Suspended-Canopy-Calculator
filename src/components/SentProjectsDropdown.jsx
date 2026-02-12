@@ -83,7 +83,7 @@ export default function SentProjectsDropdown({
       nocache: String(nocacheRef.current),
     });
     if (effectiveEmail) params.set("wp_email", effectiveEmail);
-    return `${base}/wp-json/calc/v1/list-canopy-solution-suspended-sent-projects?${params.toString()}`;
+    return `${base}/wp-json/calc/v1/list-ems-suspended-sent-projects?${params.toString()}`;
   }, [base, limit, effectiveEmail]);
 
   useEffect(() => {
@@ -261,8 +261,8 @@ export default function SentProjectsDropdown({
           <button
             type="button"
             className={`w-full border border-gray-300 rounded-md p-3 bg-white text-left text-sm h-[44px] flex items-center ${loading || projects.length === 0
-                ? "opacity-60 cursor-not-allowed"
-                : "cursor-pointer"
+              ? "opacity-60 cursor-not-allowed"
+              : "cursor-pointer"
               }`}
             onClick={openModal}
             disabled={loading || projects.length === 0}
@@ -304,8 +304,8 @@ export default function SentProjectsDropdown({
             <button
               type="button"
               className={`w-full border border-gray-300 rounded-md p-2 bg-white text-left text-sm h-[40px] flex items-center ${loading || projects.length === 0
-                  ? "opacity-60 cursor-not-allowed"
-                  : "cursor-pointer"
+                ? "opacity-60 cursor-not-allowed"
+                : "cursor-pointer"
                 }`}
               onClick={openModal}
               disabled={loading || projects.length === 0}

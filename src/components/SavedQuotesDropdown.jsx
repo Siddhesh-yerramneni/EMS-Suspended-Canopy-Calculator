@@ -117,7 +117,7 @@ export default function SavedQuotesDropdown({
       nocache: String(nocacheRef.current),
     });
     if (effectiveEmail) params.set("wp_email", effectiveEmail);
-    return `${base}/wp-json/calc/v1/list-suspended-quotes?${params.toString()}`;
+    return `${base}/wp-json/calc/v1/list-ems-suspended-projects?${params.toString()}`;
   }, [base, limit, effectiveEmail]);
 
   useEffect(() => {
